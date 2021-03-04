@@ -11,11 +11,10 @@ using std::copy;
 
 // Задание 1
 void swap_args(int *lhs, int *rhs) {
-    if (!lhs || !rhs) {
-    } else {
-        int *t = lhs;
-        lhs = rhs;
-        rhs = t;
+    if (lhs && rhs) {
+        int t = *lhs;
+        *lhs = *rhs;
+        *rhs = t;
     }
 }
 
