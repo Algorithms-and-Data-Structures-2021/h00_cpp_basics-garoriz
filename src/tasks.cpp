@@ -37,7 +37,7 @@ int **allocate_2d_array(int num_rows, int num_cols, int init_value) {
 
 // Задание 3
 bool copy_2d_array(int **arr_2d_source, int **arr_2d_target, int num_rows, int num_cols) {
-    if (!arr_2d_source | !arr_2d_target | num_rows == 0 | num_cols == 0) {
+    if (!arr_2d_source || !arr_2d_target || num_rows < 0 || num_cols < 0) {
         return false;
     }
     for (int i = 0; i < num_rows; i++) {
