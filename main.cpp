@@ -5,10 +5,6 @@
 using namespace std;
 
 int main() {
-    vector<int> numbers = {1, 2, 3};
-    vector<int> odd_numbers = find_odd_numbers(numbers);
-    for (int i = 0; i < odd_numbers.size(); ++i) {
-        cout << odd_numbers[i] << endl;
-    }
+    cout << -3 % 2 << endl;
     return 0;
 }

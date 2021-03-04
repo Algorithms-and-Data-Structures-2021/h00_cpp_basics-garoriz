@@ -91,9 +91,9 @@ int *find_max_element(int *arr, int size) {
 
 // Задание 7
 vector<int> find_odd_numbers(vector<int> &arr) {
-    vector<int> odd_numbers;
+    vector<int> odd_numbers {};
     for (int i = 0; i < arr.size(); ++i) {
-        if (arr[i] % 2 == 1) {
+        if (arr[i] % 2 != 0) {
             odd_numbers.push_back(arr[i]);
         }
     }
