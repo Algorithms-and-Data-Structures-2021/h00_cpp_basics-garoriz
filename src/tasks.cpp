@@ -20,7 +20,7 @@ void swap_args(int *lhs, int *rhs) {
 
 // Задание 2
 int **allocate_2d_array(int num_rows, int num_cols, int init_value) {
-    if (num_cols < 1 & num_rows < 1) {
+    if (num_cols < 1 || num_rows < 1) {
         return nullptr;
     }
     int **array_2d = new int *[num_rows];
